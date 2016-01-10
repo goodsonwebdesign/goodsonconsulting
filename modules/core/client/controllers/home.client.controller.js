@@ -10,15 +10,15 @@ angular.module('core').controller('HomeController', ['$scope', 'Authentication',
          { image: 'modules/core/client/img/brand/logo_2_4.png' },
          { image: 'modules/core/client/img/brand/logo_2_4.png' }
       ];
-      function initGalleria() {
+      //function initGalleria() {
           
-          if (angular.isDefined(Galleria)) {
-              Galleria.run('.galleria', {
-                  dataSource: data,
-              });
-          }
-      }
-      initGalleria();
+      //    if (angular.isDefined(Galleria)) {
+      //        Galleria.run('.galleria', {
+      //            dataSource: data,
+      //        });
+      //    }
+      //}
+      //initGalleria();
 
   }
 
