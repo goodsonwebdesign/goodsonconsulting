@@ -20,6 +20,7 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider',
       })
       .state('resume', {
           url: '/',
+          controller: 'ResumeController',
           templateUrl: 'modules/core/client/views/resume.client.view.html'
       })
       .state('not-found', {
