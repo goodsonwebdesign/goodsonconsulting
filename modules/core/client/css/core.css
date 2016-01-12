@@ -60,3 +60,7 @@ a:hover .header-profile-image {
     padding:25px;
     border:1px black solid;
 }
+.list-group-item{
+    margin-top:10px;
+    border:1px black solid;
+}
