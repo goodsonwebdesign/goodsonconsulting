@@ -1,3 +1,4 @@
+
 'use strict';
 
 module.exports = {
@@ -5,7 +6,8 @@ module.exports = {
         lib: {
             css: [
               'public/lib/bootstrap/dist/css/bootstrap.css',
-              'public/lib/bootstrap/dist/css/bootstrap-theme.css'
+              'public/lib/bootstrap/dist/css/bootstrap-theme.css',
+              'public/lib/animate.css/animate.css'
             ],
             js: [
               'public/lib/jquery/dist/jquery.js',
@@ -17,9 +19,9 @@ module.exports = {
               'public/lib/angular-ui-utils/ui-utils.js',
               'public/lib/angular-bootstrap/ui-bootstrap-tpls.js',
               'public/lib/angular-file-upload/angular-file-upload.js',
-              'public/lib/owasp-password-strength-test/owasp-password-strength-test.js',
-              'public/lib/galleria/src/galleria.js',
-              'public/lib/galleria/src/themes/classic/galleria.classic.js'
+              'public/lib/owasp-password-strength-test/owasp-password-strength-test.js'
+
+          
             ],
             tests: ['public/lib/angular-mocks/angular-mocks.js']
         },
