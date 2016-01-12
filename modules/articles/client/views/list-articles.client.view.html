@@ -1,20 +1,33 @@
 <section ng-controller="ArticlesController" ng-init="find()">
   <div class="page-header">
-    <h1>Recent News!</h1>
+    <h1 class="wow animated infinite pulse">Recent News!</h1>
   </div>
-  <div class="list-group">
-    <a ng-repeat="article in articles" ui-sref="articles.view({articleId: article._id})" class="list-group-item">
-      <small class="list-group-item-text">
-        Posted on
-        <span ng-bind="article.created | date:'mediumDate'"></span>
-        by
-        <span ng-if="article.user" ng-bind="article.user.displayName"></span>
-        <span ng-if="!article.user">Deleted User</span>
-      </small>
-      <h4 class="list-group-item-heading" ng-bind="article.title"></h4>
-      <p class="list-group-item-text" ng-bind="article.content"></p>
-    </a>
-  </div>
+    <div class="list-area">
+        <div class="list-group">
+            <a ng-repeat="article in articles" ui-sref="articles.view({articleId: article._id})" class="list-group-item">
+                <div class="pull-right" ng-show="authentication.user._id == article.user._id">
+              
+                </div>
+                <small class="list-group-item-text">
+                    Posted on
+                    <span ng-bind="article.created | date:'mediumDate'"></span>
+                    by
+                    <span ng-if="article.user" ng-bind="article.user.displayName"></span>
+                    <span ng-if="!article.user">Deleted User</span>
+                </small>
+                <div class="listed-article-title">
+                    <h3 class="list-group-item-heading" ng-bind="article.title"><b></b></h3>
+
+                </div>
+                <br />
+                <div class="list-article-body">
+                    <p class="list-group-item-text" ng-bind="article.content"></p>
+
+                </div>
+            </a>
+        </div>
+    </div>
+  
   <div class="alert alert-warning text-center" ng-if="articles.$resolved && !articles.length">
     No articles yet, why don't you <a ui-sref="articles.create">create one</a>?
   </div>

@@ -43,6 +43,20 @@ a:hover .header-profile-image {
 .has-error .help-inline.error-text {
     display: inline;
 }
-
-
-
+.page-header{
+    text-align:center;
+    padding:10px;
+}
+.list-area{
+    background-color:lightblue;
+    padding:50px;
+}
+.listed-article-title{
+    background-color:lightyellow;
+    padding:5px;
+    text-align:center;
+}
+.list-article-body{
+    padding:25px;
+    border:1px black solid;
+}
