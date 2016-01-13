@@ -64,3 +64,10 @@ a:hover .header-profile-image {
     margin-top:10px;
     border:1px black solid;
 }
+.bio{
+    font-size: 1.25em;
+    text-indent:50px
+}
+.bio-img{
+    text-align:center;
+}
