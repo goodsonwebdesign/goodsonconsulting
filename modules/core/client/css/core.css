@@ -1,5 +1,6 @@
 .content {
     margin-top: 50px;
+    
 }
 
 .undecorated-link:hover {
@@ -48,11 +49,10 @@ a:hover .header-profile-image {
     padding:10px;
 }
 .list-area{
-    background-color:lightblue;
     padding:50px;
 }
 .listed-article-title{
-    background-color:lightyellow;
+    background-color:lightblue;
     padding:5px;
     text-align:center;
 }
