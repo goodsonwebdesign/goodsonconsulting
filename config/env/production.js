@@ -15,7 +15,7 @@ module.exports = {
       user: '',
       pass: ''
     },
-      sessionSecret: process.env.SESSION_SECRET || 'super amazing secret',
+     
     // Enable mongoose debug mode
     debug: process.env.MONGODB_DEBUG || false
   },
