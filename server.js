@@ -3,5 +3,5 @@
 /**
  * Module dependencies.
  */
-var app = require('./config/lib/app.');
+var app = require('./config/lib/app.js');
 var server = app.start();
