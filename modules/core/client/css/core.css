@@ -67,6 +67,7 @@ a:hover .header-profile-image {
 .bio{
     font-size: 1.25em;
     text-indent:50px
+    text-align:  !important;
 }
 .bio-img{
     text-align:center;
